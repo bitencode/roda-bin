@@ -13,5 +13,7 @@ $LOAD_PATH << File.expand_path(File.join(File.dirname(__FILE__), "../lib"))
 require 'roda/bin'
 
 Clap.run ARGV,
-  "server" => -> { Roda::BIN.server },
-  "s"      => -> { Roda::BIN.server }
+  "server"  => -> { Roda::BIN.server },
+  "s"       => -> { Roda::BIN.server },
+  "console" => -> { Roda::BIN.console },
+  "c"       => -> { Roda::BIN.console }

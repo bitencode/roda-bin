@@ -25,6 +25,12 @@ class Roda
       Rerun::Runner.keep_running(options[:cmd], options)
     end
 
+    def console
+      require 'pry'
+      require './config/environment'
+      Pry.start
+    end
+
     def envs
       @envs ||= {}
     end

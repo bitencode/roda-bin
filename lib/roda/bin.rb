@@ -17,7 +17,7 @@ class Roda
         background: true,
         growl: false,
         name: 'Roda Server',
-        ignore: [],
+        ignore: ["tmp/"],
         dir: ["."],
         pattern: "{Gemfile,Gemfile.lock,.gems,.bundle,.env*,config.ru,Rakefile,**/*.{rb,js,coffee,css,scss,sass,styl,erb,html,haml,ru,yml,slim,md,mab,rake}}"
       }
